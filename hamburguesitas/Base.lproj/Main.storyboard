@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="toO-AB-ty5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hamburguesas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Hamburguesas" id="BYZ-38-t0r" customClass="ViewController" customModule="hamburguesitas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEm-aJ-8Un">
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EtB-Ye-rOX"/>
+                                    <constraint firstAttribute="width" constant="280" id="H2H-4q-DsZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTk-IF-kgp">
+                                <rect key="frame" x="20" y="307" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Nxf-bQ-Apy"/>
+                                    <constraint firstAttribute="height" constant="30" id="shG-hW-S9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-va-GTk">
+                                <rect key="frame" x="60" y="212" width="200" height="30"/>
+                                <state key="normal" title="¡Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="cambiarPaisHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICg-ov-X9V"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZEm-aJ-8Un" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K2k-QU-LLo"/>
+                            <constraint firstItem="fTk-IF-kgp" firstAttribute="top" secondItem="ZEm-aJ-8Un" secondAttribute="bottom" constant="8" id="NW6-DY-Nf2"/>
+                            <constraint firstItem="E8u-va-GTk" firstAttribute="centerX" secondItem="ZEm-aJ-8Un" secondAttribute="centerX" id="S6X-Vb-jyX"/>
+                            <constraint firstItem="ZEm-aJ-8Un" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cay-so-jF3"/>
+                            <constraint firstItem="E8u-va-GTk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="hCf-ut-RPo"/>
+                            <constraint firstItem="fTk-IF-kgp" firstAttribute="centerX" secondItem="ZEm-aJ-8Un" secondAttribute="centerX" id="uDO-Kp-7fa"/>
+                            <constraint firstItem="ZEm-aJ-8Un" firstAttribute="top" secondItem="E8u-va-GTk" secondAttribute="bottom" constant="27" id="xE6-hj-Dkh"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Hamburguesas" id="LDw-YG-ujX"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="botonQuieroUnaHamburguesa" destination="E8u-va-GTk" id="Q0O-Jq-OjY"/>
+                        <outlet property="etiquetaHamburguesa" destination="fTk-IF-kgp" id="aE8-tl-9ZR"/>
+                        <outlet property="etiquetaPais" destination="ZEm-aJ-8Un" id="ouj-jl-eFC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="713" y="317"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T3l-cM-PKl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="toO-AB-ty5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v1k-tU-nGR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X8d-KN-uxd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JqS-UR-Qgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="317"/>
         </scene>
     </scenes>
 </document>

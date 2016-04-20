@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DC78A441CC7CB85001E73D3 /* PaletaColores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC78A431CC7CB85001E73D3 /* PaletaColores.swift */; };
 		9DCFC4041CC6BE750004FFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFC4031CC6BE750004FFBF /* AppDelegate.swift */; };
 		9DCFC4061CC6BE750004FFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFC4051CC6BE750004FFBF /* ViewController.swift */; };
 		9DCFC4091CC6BE750004FFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCFC4071CC6BE750004FFBF /* Main.storyboard */; };
 		9DCFC40B1CC6BE750004FFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCFC40A1CC6BE750004FFBF /* Assets.xcassets */; };
 		9DCFC40E1CC6BE750004FFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCFC40C1CC6BE750004FFBF /* LaunchScreen.storyboard */; };
+		9DCFC4161CC6DD040004FFBF /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFC4151CC6DD040004FFBF /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DC78A431CC7CB85001E73D3 /* PaletaColores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletaColores.swift; sourceTree = "<group>"; };
 		9DCFC4001CC6BE750004FFBF /* hamburguesitas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hamburguesitas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCFC4031CC6BE750004FFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DCFC4051CC6BE750004FFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9DCFC40A1CC6BE750004FFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DCFC40D1CC6BE750004FFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DCFC40F1CC6BE750004FFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DCFC4151CC6DD040004FFBF /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9DCFC40A1CC6BE750004FFBF /* Assets.xcassets */,
 				9DCFC40C1CC6BE750004FFBF /* LaunchScreen.storyboard */,
 				9DCFC40F1CC6BE750004FFBF /* Info.plist */,
+				9DCFC4151CC6DD040004FFBF /* Datos.swift */,
+				9DC78A431CC7CB85001E73D3 /* PaletaColores.swift */,
 			);
 			path = hamburguesitas;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC78A441CC7CB85001E73D3 /* PaletaColores.swift in Sources */,
 				9DCFC4061CC6BE750004FFBF /* ViewController.swift in Sources */,
 				9DCFC4041CC6BE750004FFBF /* AppDelegate.swift in Sources */,
+				9DCFC4161CC6DD040004FFBF /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,7 @@
 				9DCFC4141CC6BE750004FFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
